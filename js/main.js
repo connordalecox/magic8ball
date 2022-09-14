@@ -11,7 +11,9 @@ function myFunction() {
         alert("*Of course! Congrats on finding the secret question!!* ");
         setTimeout(timeup, 250);
     } else {
-        getAnswer()
+        // getAnswer()
+        // document.getElementById("question-asked").innerHTML=urQuestion;
+        setTimeout(getAnswer, 500);
         document.getElementById("question-asked").innerHTML=urQuestion;
     }
     
