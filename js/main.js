@@ -1,9 +1,15 @@
+function timeup(){
+    document.getElementById("answer").innerHTML="8";
+    document.getElementById("answer").style.fontSize="120px";
+    document.getElementById("typehere").value="";
+}
 function myFunction() {
     let urQuestion = document.getElementById("typehere").value;
     if (urQuestion== "") {
         alert("Please enter a question")
     } else if (urQuestion== "is connor cool") {
-        alert("*Of course! Congrats on finding the secret question!!* ")
+        alert("*Of course! Congrats on finding the secret question!!* ");
+        setTimeout(timeup, 250);
     } else {
         getAnswer()
         document.getElementById("question-asked").innerHTML=urQuestion;
@@ -34,11 +40,7 @@ function getAnswer(){
     document.getElementById("answer").style.fontSize="18px";
     setTimeout(timeup, 2500);
 
-    function timeup(){
-        // document.getElementById("answer").innerHTML="8";
-        // document.getElementById("answer").style.fontSize="120px";
-        document.getElementById("typehere").value="";
-    }
+    
 
 }
 
