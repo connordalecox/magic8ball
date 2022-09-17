@@ -85,9 +85,6 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-}
-
-button {
   cursor: pointer;
   display: inline-block;
   position: absolute;

@@ -3,6 +3,7 @@ function timeup(){
     document.getElementById("answer").style.fontSize="120px";
     document.getElementById("typehere").value="";
 }
+
 function myFunction() {
     let urQuestion = document.getElementById("typehere").value;
     if (urQuestion== "") {
@@ -17,7 +18,8 @@ function myFunction() {
         document.getElementById("question-asked").innerHTML=urQuestion;
     }
     
-} 
+}
+
 const answers = [
     "It is certain.",
     "It is decidedly so.",
@@ -41,9 +43,6 @@ function getAnswer(){
     document.getElementById("answer").innerHTML=answers[0];
     document.getElementById("answer").style.fontSize="18px";
     setTimeout(timeup, 2500);
-
-    
-
 }
 
 const askMe = document.getElementById("askme");
